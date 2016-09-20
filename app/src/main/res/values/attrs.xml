@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="LhtProgressBar">
+        <attr name="progressText" format="string" />
+        <attr name="borderWidth" format="integer" />
+        <attr name="backgroundColor" format="color" />
+        <attr name="textColor" format="color" />
+        <attr name="progress" format="float" />
+        <attr name="maxProgress" format="float" />
+        <attr name="textSize" format="integer" />
+    </declare-styleable>
+</resources>
