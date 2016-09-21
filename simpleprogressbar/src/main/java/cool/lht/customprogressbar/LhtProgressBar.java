@@ -21,13 +21,13 @@ import android.view.View;
 public class LhtProgressBar extends View {
 
 
-    private int textColor;    //进度条文字颜色
-    private int backgroundColor;    //进度条背景颜色
-    private float maxProgress;  //进度条最大值
-    private int textSize;  //文字大小
-    private float progress;  //进度条当前值
-    private int borderWidth;   //边框宽度
-    private String progressText = "";   //进度条文字
+    private int textColor;
+    private int backgroundColor;
+    private float maxProgress;
+    private int textSize;
+    private float progress;
+    private int borderWidth;
+    private String progressText = "";
 
     private Context mContext;
     private Paint mPaint;

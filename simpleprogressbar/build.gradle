@@ -1,0 +1,42 @@
+apply plugin: 'com.android.library'
+android {
+    compileSdkVersion 24
+    buildToolsVersion "24.0.0"
+    resourcePrefix "bounceprogressbar__"
+
+    defaultConfig {
+        minSdkVersion 15
+        targetSdkVersion 24
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+}
+ext {
+    bintrayRepo = 'maven'
+    bintrayName = 'simpleprogressbar'
+    publishedGroupId = 'cool.lht.android'
+    libraryName = 'SimpleProgressBar'
+    artifact = 'simpleprogressbar'
+    libraryDescription = 'A Simple ProgressBar on Android'
+    siteUrl = 'https://github.com/lhtdeg/SimpleProgressBar'
+    gitUrl = 'https://github.com/lhtdeg/SimpleProgressBar.git'
+    libraryVersion = '1.0'
+    developerId = 'lhtdeg'
+    developerName = 'HatimLiu'
+    developerEmail = 'lhtdeg@gmail.com'
+    licenseName = 'The Apache Software License, Version 2.0'
+    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+    allLicenses = ["Apache-2.0"]
+}
+apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle'
+apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle'
