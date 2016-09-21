@@ -216,4 +216,8 @@ public class LhtProgressBar extends View {
         this.maxProgress = maxProgress;
     }
 
+    public void setBorderWidth(int borderWidth) {
+        this.borderWidth = borderWidth;
+    }
+
 }
